@@ -34,6 +34,7 @@ end
 return {
   {
     "mfussenegger/nvim-dap",
+    enabled = vim.g.vscode == nil,
     lazy = false,
     config = function()
       local dap = require("dap")
@@ -110,6 +111,7 @@ return {
 
   {
     "rcarriga/nvim-dap-ui",
+    enabled = vim.g.vscode == nil,
     dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
     config = function()
       local dap = require("dap")
@@ -183,6 +185,7 @@ return {
 
   {
     "jay-babu/mason-nvim-dap.nvim",
+    enabled = vim.g.vscode == nil,
     dependencies = {
       "williamboman/mason.nvim",
       "mfussenegger/nvim-dap",

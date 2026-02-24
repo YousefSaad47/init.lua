@@ -4,6 +4,7 @@ end
 
 return {
   "HiPhish/rainbow-delimiters.nvim",
+  enabled = vim.g.vscode == nil,
   event = "VeryLazy",
   config = function()
     require("rainbow-delimiters.setup").setup({

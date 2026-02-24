@@ -1,6 +1,6 @@
 return {
   "theprimeagen/vim-be-good",
-  enabled = true,
+  enabled = vim.g.vscode == nil,
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
